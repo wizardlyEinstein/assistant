@@ -1,0 +1,12 @@
+namespace: assistant
+
+resources:
+- manifest.yaml
+
+configMapGenerator:
+- name: init
+  files:
+  - configs/init.sh
+
+generators:
+- secrets/config.yaml
